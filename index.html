@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Overpass';
+            background-image: linear-gradient(to right, #bbb, #ededed, #bbb);
+        }
+
+        .card {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position:absolute;
+            background-color: white;
+        }
+
+        ul.navbar {
+            overflow: hidden;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(#c00, #640000, #c00);
+        }
+
+        li {
+            float: right;
+            text-align: center;
+            color: #bbb;
+        }
+
+
+        li a {
+            display: block;
+            padding: 13px 15px;
+            border-left: 1px solid #bbb;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-image: linear-gradient(to right, #470000, #c00, #470000);
+            color: white;
+        }
+
+        li.title {
+            color: white;
+            font-weight: 200;
+            float: left;
+            border-left: none;
+            padding: 13px 15px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .content {
+            padding: 20px 13px;
+        }
+
+        .grid-row-title {
+            width: 25%;
+            display: inline-flex;
+        }
+
+        .grid-row-value {
+            display: inline;
+            color: grey;
+        }
+
+        .grid {
+            margin: 20px 0px;
+        }
+
+        .row {
+            padding-top: 15px;
+        }
+
+        btn.success {
+            color: #fff;
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            padding: 6px 12px;
+            vertical-align: middle;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <ul class="navbar">
+            <li class="title">OpenShift</li>
+            <li><a>Item</a></li>
+            <li><a>Item</a></li>
+            <li><a>Item</a></li>
+        </ul>
+        <div class="content">
+            <h2>Panel Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua id est laborum.
+            </p>
+            <div class="grid">
+                <div class="row">
+                    <div class="grid-row-title">Case ID:</div>
+                    <div class="grid-row-value">Case0002b</div>
+                </div>
+                <div class="row">
+                    <div class="grid-row-title">Case Name:</div>
+                    <div class="grid-row-value">Development case instance</div>
+                </div>
+                <div class="row">
+                    <div class="grid-row-title">Status:</div>
+                    <div class="grid-row-value">
+                        <btn class="success">Active</btn>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grid-row-title">State:</div>
+                    <div class="grid-row-value">Started on March 16th, 2017</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
